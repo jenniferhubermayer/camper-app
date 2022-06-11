@@ -1,19 +1,19 @@
 /* ===== FONTS ===== */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* ===== COLORS ===== */
 
 :root{
     --grapefruit: #FF7144;
-    --grapefruitlight: #FF7144 60%;
+    --grapefruitlight: rgb(255, 113, 68, 0.6);
     --orange: #FF9635;
     --textcolor: #232323;
-    --textcolor-shade1: #4F4F4F;
-    --textcolor-shade3: #A7A7A7;
-    --grey-100: #666666;
+    --textcolorshade1: #4F4F4F;
+    --textcolorshade3: #A7A7A7;
+    --grey100: #666666;
     --black: #1A1a1a;
-    --black-shade2: #000000;
+    --blackshade2: #000000;
 }
 
 /* ===== GENERAL STYLES ===== */
@@ -22,4 +22,262 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: 'Sora', sans-serif;
+    color: var(--textcolor);
+}
+
+main{
+    border-radius: 14px 14px 0 0;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    padding: 30px 39px 93px 39px;
+}
+
+.wrapper-mobile-only{
+    max-width: 576px;
+    /* max-width: 375px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-transform: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 20;
+    display: flex;
+    gap: 9.4px;
+    justify-content: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav button:not(#closing-button){
+    background-color: var(--grapefruit);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+}
+
+nav button:not(#closing-button):hover{
+    background-color: var(--orange);
+}
+
+#closing-button{
+    background-color: var(--grapefruitlight);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+}
+
+.active-menu{
+    display: none;
+}
+
+.active .active-menu{
+    display: inherit;
+}
+
+.active .inactive-menu{
+    display: none;
+}
+
+/* ===== BIG TOP PICTURE ===== */
+
+.big-top-picture{
+    height: 227px;
+}
+
+.big-top-picture img{
+    width: 100%;
+}
+
+/* ===== ICON BAR TOP ===== */
+
+.icon-bar-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.53px;
+}
+
+.icon-bar-top button{
+    background-color: white;
+    border: var(--textcolorshade3) solid 1px;
+    padding: 6px 12px;
+    border-radius: 60px;
+    margin-right: 5px;
+    color: var(--textcolorshade1);
+}
+
+.icon-bar-top a:nth-of-type(1){
+    padding-right: 11.51px;
+}
+
+/* ===== ACCOMODATION DESCRIPTION ===== */
+
+.accomodation-description{
+    padding-top: 13px;
+}
+
+.accomodation-description h3{
+    color: var(--grapefruit);
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+}
+
+.accomodation-description h1{
+    color: var(--black);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+}
+
+.accomodation-description p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 24px;
+}
+
+/* ===== BOOKING CHOICES ===== */
+
+.booking-choices{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 46px;
+}
+
+.booking-choices article{
+    border: var(--orange) 1px solid;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+}
+
+.booking-choices article div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.booking-choices article h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 16px;
+}
+
+.booking-choices article h3{
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: 2px;
+}
+
+.booking-choices .available-booking-choices{
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: 2px;
+    color: var(--textcolorshade3);
+}
+
+.booking-choices p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--grey100);
+}
+
+/* ===== SLIDER ===== */
+
+.slider{
+    transform: translateX(-39px);
+    width: 100vw;
+    padding-bottom: 36px;
+}
+
+.slider img{
+    width: 100%;
+}
+
+/* ===== EXTRAS ===== */
+
+.extras h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 16px;
+}
+
+.extras article{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 2px;
+}
+
+.extras article:not(article:last-of-type){
+    border-bottom: lightgrey 1px solid;
+    padding-bottom: 16px;
+}
+
+.extras article:not(article:first-of-type){
+    padding-top: 16px;
+}
+
+.extras article img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.extras article h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 13.13px;
+}
+
+.extras article p{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 13.13px;
 }
