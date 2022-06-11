@@ -55,6 +55,10 @@ a{
     text-decoration: none;
 }
 
+br{
+    margin-bottom: 1.5rem;
+}
+
 /* ===== NAVIGATION ===== */
 
 nav{
@@ -113,8 +117,22 @@ nav button:not(#closing-button):hover{
     height: 227px;
 }
 
-.big-top-picture img{
+.big-top-picture > img{
     width: 100%;
+}
+
+.back-link a{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 30;
+    position: absolute;
+    left: 39px;
+    border-radius: 50%;
+    transform: translateY(-98px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ===== ICON BAR TOP ===== */
@@ -166,6 +184,66 @@ nav button:not(#closing-button):hover{
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 24px;
+}
+
+/* ===== BOOKING BAR ===== */
+
+.booking-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 29.5px;
+}
+
+.booking-bar button{
+    border: var(--orange) 1px solid;
+    border-radius: 20px;
+    padding: 6px 17.25px 6px 9.25px;
+    background-color: white;
+    text-align: left;
+}
+
+.booking-bar h2{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.booking-bar button h3{
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 8px;
+    color: var(--grapefruit);
+}
+
+.booking-bar button p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--textcolorshade1);
+}
+
+.booking-bar div p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--grey100);
+}
+
+button.booking-button{
+    background-color: var(--grapefruit);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 17.3px;
+}
+
+button.booking-button:hover{
+    background-color: var(--orange);
+    border: var(--orange) 1px solid;
 }
 
 /* ===== BOOKING CHOICES ===== */
