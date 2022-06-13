@@ -75,6 +75,10 @@ nav{
     padding-bottom: 10px;
 }
 
+nav button img{
+    background-color: red;
+}
+
 nav li{
     display: inline;
 }
@@ -97,6 +101,48 @@ nav button:not(#closing-button):hover{
     width: 48px;
     border-radius: 50%;
     border: none;
+}
+
+button#pin{
+    background-image: url(../img/Vector_pin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#bookmark{
+    background-image: url(../img/Vector_bookmark_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#profile{
+    background-image: url(../img/Vector_profile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#roulette{
+    background-image: url(../img/Vector_roulette.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#arrow{
+    background-image: url(../img/Vector_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#closing-button{
+    background-image: url(../img/Vector_Cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#burger{
+    background-image: url(../img/Vector_Burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .active-menu{
@@ -130,9 +176,9 @@ nav button:not(#closing-button):hover{
     left: 39px;
     border-radius: 50%;
     transform: translateY(-98px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url(../img/Vector_back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* ===== ICON BAR TOP ===== */
@@ -152,8 +198,31 @@ nav button:not(#closing-button):hover{
     color: var(--textcolorshade1);
 }
 
-.icon-bar-top a:nth-of-type(1){
-    padding-right: 11.51px;
+a.icons:nth-child(1){
+    margin-right: 11.51px;
+}
+
+a.icons{
+    height: 21px;
+    width: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+a#icon-phone{
+    background-image: url(../img/Vector_Phone.svg);
+}
+
+a#icon-phone:hover{
+    background-image: url(../img/Vector_phone_red.svg);
+}
+
+a#icon-bookmark{
+    background-image: url(../img/Vector_Bookmark.svg);
+}
+
+a#icon-bookmark:hover{
+    background-image: url(../img/Vector_bookmark_red.svg);
 }
 
 /* ===== ACCOMODATION DESCRIPTION ===== */

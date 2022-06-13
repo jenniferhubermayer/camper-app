@@ -13,61 +13,33 @@
         <nav>
           <ul>
             <li>
-              <button class="active-menu">
-                <img src="./assets/img/Vector_pin.svg" alt="Icon Map-menu" />
-              </button>
+              <button class="active-menu" id="pin"></button>
             </li>
             <li>
-              <button class="active-menu">
-                <img
-                  src="./assets/img/Vector_bookmark_white.svg"
-                  alt="Icon Bookmarks-menu"
-                />
-              </button>
+              <button class="active-menu" id="bookmark"></button>
             </li>
             <li>
-              <button class="active-menu">
-                <img
-                  src="./assets/img/Vector_profile.svg"
-                  alt="Icon Profile-menu"
-                />
-              </button>
+              <button class="active-menu" id="profile"></button>
             </li>
             <li>
-              <button class="active-menu">
-                <img
-                  src="./assets/img/Vector_roulette.svg"
-                  alt="Icon Roulette-menu"
-                />
-              </button>
+              <button class="active-menu" id="roulette"></button>
             </li>
             <li>
-              <button class="active-menu">
-                <img
-                  src="./assets/img/Vector_arrow.svg"
-                  alt="Icon Arrow-menu"
-                />
-              </button>
+              <button class="active-menu" id="arrow"></button>
             </li>
             <li>
               <button
                 class="active-menu"
                 onclick="closeMenu()"
                 id="closing-button"
-              >
-                <img
-                  src="./assets/img/Vector_Cross.svg"
-                  alt="Icon Cross-menu"
-                />
-              </button>
+              ></button>
             </li>
             <li>
-              <button class="inactive-menu" onclick="openMenu()">
-                <img
-                  src="./assets/img/Vector_Burger.svg"
-                  alt="Icon Burger-Menu"
-                />
-              </button>
+              <button
+                class="inactive-menu"
+                onclick="openMenu()"
+                id="burger"
+              ></button>
             </li>
           </ul>
         </nav>
@@ -82,16 +54,8 @@
             <button>Verfügbarkeit</button>
           </div>
           <div>
-            <a href="#"
-              ><img
-                src="./assets/img/Vector_Phone.svg"
-                alt="Vector graphic phone"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/img/Vector_Bookmark.svg"
-                alt="Vector graphic bookmark"
-            /></a>
+            <a href="#" class="icons" id="icon-phone"> </a>
+            <a href="#" class="icons" id="icon-bookmark"> </a>
           </div>
         </section>
         <section class="accomodation-description">
@@ -122,7 +86,7 @@
             <article>
               <div>
                 <h3>Bed&#38;Breakfast</h3>
-                <p>3 verfügbar</p>
+                <p class="available-booking-choices">3 verfügbar</p>
               </div>
               <h2>Wohnen im Gut</h2>
               <p>

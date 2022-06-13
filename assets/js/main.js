@@ -1,7 +1,3 @@
-console.log("Hallo!")
-
-console.log(document.querySelector("ul"))
-
 function openMenu(){
     document.querySelector("ul").classList.remove("inactive");
     document.querySelector("ul").classList.add("active");
