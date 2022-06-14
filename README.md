@@ -31,9 +31,9 @@ Realize the layout of the camper-app. All you have to do is convert the screens 
 
 ### Screenshot
 
-![](./sollutions/screen_1.png)
-![](./sollutions/screen_2.png)
-![](./sollutions/screen_3.png)
+![](./screenshots/screen_1.png)
+![](./screenshots/screen_2.png)
+![](./screenshots/screen_3.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
