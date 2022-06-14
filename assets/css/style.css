@@ -27,20 +27,25 @@
 body{
     background-color: lightgrey;
     font-family: 'Sora', sans-serif;
+    font-weight: 300;
     color: var(--textcolor);
 }
 
 main{
     border-radius: 14px 14px 0 0;
     position: relative;
-    z-index: 10;
     background-color: white;
-    padding: 30px 39px 93px 39px;
+    padding-bottom: 93px;
+    margin-top: -20%;
+}
+
+section{
+    padding-left: 39px;
+    padding-right: 39px;
 }
 
 .wrapper-mobile-only{
     max-width: 576px;
-    /* max-width: 375px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -75,20 +80,19 @@ nav{
     padding-bottom: 10px;
 }
 
-nav button img{
-    background-color: red;
-}
-
 nav li{
     display: inline;
 }
 
-nav button:not(#closing-button){
-    background-color: var(--grapefruit);
+nav button{
     height: 48px;
     width: 48px;
     border-radius: 50%;
     border: none;
+}
+
+nav button:not(#closing-button){
+    background-color: var(--grapefruit);
 }
 
 nav button:not(#closing-button):hover{
@@ -97,52 +101,45 @@ nav button:not(#closing-button):hover{
 
 #closing-button{
     background-color: var(--grapefruitlight);
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-    border: none;
+}
+
+button#pin,
+button#bookmark,
+button#profile,
+button#roulette,
+button#arrow,
+button#closing-button,
+button#burger{
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 button#pin{
     background-image: url(../img/Vector_pin.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#bookmark{
     background-image: url(../img/Vector_bookmark_white.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#profile{
     background-image: url(../img/Vector_profile.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#roulette{
     background-image: url(../img/Vector_roulette.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#arrow{
     background-image: url(../img/Vector_arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#closing-button{
     background-image: url(../img/Vector_Cross.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button#burger{
     background-image: url(../img/Vector_Burger.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .active-menu{
@@ -160,25 +157,28 @@ button#burger{
 /* ===== BIG TOP PICTURE ===== */
 
 .big-top-picture{
-    height: 227px;
+    padding: unset;
 }
 
 .big-top-picture > img{
     width: 100%;
 }
 
+.back-link{
+    position: relative;
+    top: -60px;
+    left: 30px;
+}
+
 .back-link a{
     width: 30px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.3);
-    z-index: 30;
-    position: absolute;
-    left: 39px;
     border-radius: 50%;
-    transform: translateY(-98px);
     background-image: url(../img/Vector_back.svg);
     background-repeat: no-repeat;
     background-position: center;
+    display: inline-block;
 }
 
 /* ===== ICON BAR TOP ===== */
@@ -187,6 +187,7 @@ button#burger{
     display: flex;
     justify-content: space-between;
     margin-bottom: 4.53px;
+    padding-top: 30px;
 }
 
 .icon-bar-top button{
@@ -249,7 +250,6 @@ a#icon-bookmark:hover{
 }
 
 .accomodation-description p{
-    font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 24px;
@@ -285,14 +285,12 @@ a#icon-bookmark:hover{
 }
 
 .booking-bar button p{
-    font-weight: 300;
     font-size: 12px;
     line-height: 16px;
     color: var(--textcolorshade1);
 }
 
 .booking-bar div p{
-    font-weight: 300;
     font-size: 12px;
     line-height: 16px;
     color: var(--grey100);
@@ -318,18 +316,20 @@ button.booking-button:hover{
 /* ===== BOOKING CHOICES ===== */
 
 .booking-choices{
-
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     padding-bottom: 46px;
 }
 
+.booking-choices a{
+    width: 100%;
+}
+
 .booking-choices article{
     border: var(--orange) 1px solid;
     border-radius: 12px;
     padding: 16px;
-    width: 100%;
 }
 
 .booking-choices article div{
@@ -352,7 +352,7 @@ button.booking-button:hover{
     letter-spacing: 2px;
 }
 
-.booking-choices .available-booking-choices{
+.available-booking-choices{
     font-weight: 400;
     font-size: 9px;
     line-height: 9px;
@@ -361,7 +361,6 @@ button.booking-button:hover{
 }
 
 .booking-choices p{
-    font-weight: 300;
     font-size: 12px;
     line-height: 16px;
     color: var(--grey100);
@@ -370,8 +369,9 @@ button.booking-button:hover{
 /* ===== SLIDER ===== */
 
 .slider{
-    transform: translateX(-39px);
-    width: 100vw;
+    width: 100%;
+    padding-left: unset;
+    padding-right: unset;
     padding-bottom: 36px;
 }
 
@@ -423,7 +423,6 @@ button.booking-button:hover{
 .extras article p{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    font-weight: 300;
     font-size: 12px;
     line-height: 16px;
     padding-left: 13.13px;
