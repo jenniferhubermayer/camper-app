@@ -167,6 +167,7 @@ button#burger{
     position: relative;
     top: -60px;
     left: 30px;
+    width: fit-content;
 }
 
 .back-link a{
