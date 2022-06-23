@@ -1,6 +1,6 @@
 # camper-app | Booking-Tool for curated roadtrip places
 
-Super(code) | Interdisciplinary Project | UX/UI-Design Boot-Camp Summer 2022 &amp; Front-End Boot-Camp 2022
+super(code) | Interdisciplinary Project | UX/UI-Design Boot-Camp Summer 2022 &amp; Front-End Boot-Camp 2022
 
 ## Table of contents
 
@@ -49,4 +49,4 @@ Realize the layout of the camper-app. All you have to do is convert the screens 
 
 ## Acknowledgments
 
-The design of this project is a solution for the final project by the members of [Super(code)](https://www.super-code.de/) "UX/UI-Design Boot-Camp Summer 2022". As part of an interdisciplinary project with the Super(Code) "Front-End Boot-Camp 2022".
+The design of this project is a solution for the final project by the members of [super(code)](https://www.super-code.de/) "UX/UI-Design Boot-Camp Summer 2022". As part of an interdisciplinary project with the super(Code) "Front-End Boot-Camp 2022".
